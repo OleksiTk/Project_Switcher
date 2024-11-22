@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+/*--------------------------------------------------------*/
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.theme__black {
+  background-color: black;
+}
+.theme__white {
+  background-color: antiquewhite;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+/*--------------------------------------------------------*/
+.wrapper {
+}
+.button__container {
+  padding-top: 350px;
+}
+.button__body {
+}
+.button__type {
+  padding: 20px 60px;
+  background-color: brown;
+  border-radius: 20px;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.button__white:hover {
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.637);
+}
+.button__black:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.637);
+}
